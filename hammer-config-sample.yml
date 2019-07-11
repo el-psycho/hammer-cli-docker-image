@@ -1,0 +1,35 @@
+# Example hammer CLI configuration file. Use this as a starting point and tweak
+# as needed.
+#
+:foreman:
+  :enable_module: true
+
+  # Your Foreman/Katello server address
+  :host: 'https://katello.local'
+
+  # Credentials. You'll be asked for the interactively if you leave them blank here
+  :username: 'ChangeMe'
+  :password: 'ChamgeMe'
+
+  # Check API documentation cache status on each request
+  :refresh_cache: false
+
+  # API request timeout in seconds, set -1 for infinity
+  :request_timeout: 120
+
+:ssl:
+  :verify_ssl: false
+
+# Enable other hammer plugins typically used with Katello
+:katello:
+  :enable_module: true
+
+:foreman_bootdisk:
+  :enable_module: true
+
+:foreman_docker:
+  :enable_module: true
+
+:foreman_tasks:
+  :enable_module: true
+
