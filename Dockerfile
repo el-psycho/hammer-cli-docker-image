@@ -20,6 +20,5 @@ RUN true \
   && yum clean all \
   && rm -vrf /var/cache/yum
 
-COPY entrypoint.sh /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
-
+ENTRYPOINT ["/usr/bin/hammer"]
+CMD []
